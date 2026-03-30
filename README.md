@@ -134,7 +134,6 @@ Because inference runs entirely locally via Ollama, both token generation speed 
 - [Streamlit Chat Elements Docs](https://docs.streamlit.io/develop/api-reference/chat)
 - [Streamlit Session State Docs](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state)
 - [Ollama Python Client](https://github.com/ollama/ollama-python)
-- [OpenAI Chat Completions API](https://platform.openai.com/docs/guides/text?api-mode=chat) (for the cloud fallback)
 - [Meta Llama 3 Model Card](https://ai.meta.com/blog/meta-llama-3/)
 
 ---
