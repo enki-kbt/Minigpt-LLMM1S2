@@ -1,0 +1,24 @@
+# Mini ChatGPT — Dependencies
+# ==============================
+# Python >= 3.9 recommended (3.11 tested)
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# Ollama itself is NOT a Python package — it's a system daemon.
+# See README.md for installation instructions.
+
+# ── Core web app ──────────────────────────────────────────────────────────────
+streamlit>=1.35.0,<2.0.0       # UI framework; chat primitives added in 1.23
+
+# ── LLM backend — Local (Ollama) ──────────────────────────────────────────────
+ollama>=0.2.0                  # Official Ollama Python client
+                               # Communicates with the local Ollama HTTP server
+
+# ── LLM backend — Cloud fallback (OpenAI) ────────────────────────────────────
+# Uncomment if you switch to the OpenAI API (see chatbot.py for instructions)
+# openai>=1.30.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+# No additional runtime dependencies needed.
+# streamlit already pulls in: requests, typing-extensions, packaging, etc.
